@@ -1357,8 +1357,9 @@ def queryExport_ask(call):
     bot.send_document(call.message.chat.id, file)
 
 
-while True:
-    try:
-        bot.polling()
-    except:
-        time.sleep(15)
+# while True:
+#     try:
+#         bot.polling()
+#     except:
+#         time.sleep(15)
+bot.infinity_polling()
